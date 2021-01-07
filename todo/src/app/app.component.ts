@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'todo';
+  dataToPass = 'This content from app ( parent wi) component';
+  dataFromParent="";
+
+  addItem(ev) {
+    this.dataFromParent = ev;
+  }
 }
